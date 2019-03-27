@@ -1,0 +1,22 @@
+#main {
+    position: absolute;
+}
+
+#data {
+    z-index: 1;
+    position: absolute;
+    padding-left: 20px;
+    max-width: 50ch;
+    overflow: hidden;
+}
+
+#canvas {
+    z-index: 2;
+    border: solid black;
+    position: absolute;
+
+}
+
+body {
+    margin: 0;
+}

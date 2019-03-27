@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+
+    <style type="text/css">
+        #checkers {
+            border: solid black;
+        }
+
+        #display {
+            float: right;
+        }
+
+        table button,
+        span,
+        p {
+            width: 100px;
+            height: 40px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+        }
+
+        table {
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 0
+        }
+
+        canvas {
+            display: block;
+            margin: 0 auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            z-index: 1;
+            background: white;
+        }
+
+        body {
+            margin: 0px;
+            background: red;
+        }
+    </style>
+</head>
+
+<body onload="renderGrid()">
+    <canvas ID="checkers">
+    </canvas>
+    <table>
+        <tr>
+            <td><button id='start'>start</button></td>
+        </tr>
+        <tr>
+            <td><button id="clear">clear</button></td>
+        </tr>
+        <tr>
+            <td><button id='stop'>stop</button></td>
+        </tr>
+        <tr>
+            <td><span id='debugText'></span></td>
+        </tr>
+        <tr>
+
+            <td>
+                <p id="printPosition"></p>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
